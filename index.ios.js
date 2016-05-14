@@ -23,6 +23,7 @@ import SplitPage from './Page/SplitPage';
 import DiscussionPage from './Page/DiscussionPage';
 import ListenerPage from './Page/ListenerPage';
 import WatchPage from './Page/WatchPage';
+import Firebase from 'firebase';
 class spitter extends Component {
   render() {
     return (
