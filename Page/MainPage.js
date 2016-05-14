@@ -8,8 +8,6 @@ import {
   TouchableHighlight,
   TouchableOpacity
 } from 'react-native';
-
-import Button from 'react-native-button';
 import SideMenu from 'react-native-side-menu';
 import Menu from './Menu';
 class ContentView extends Component {
@@ -85,21 +83,9 @@ class ContentView extends Component {
               </View>
           </TouchableHighlight>
         </View>*/}
-          <Button
-          onPress={this.gotoSplitPage.bind(this)}
-          containerStyle={{padding:10, height:45, overflow:'hidden', borderRadius:4, backgroundColor: 'black'}}
-          style={{fontSize: 20, color: 'green'}}
-          ></Button>
         </View>
       </View>
     );
-  }
-  gotoSplitPage() {
-    this.props.navigator.push({
-      id:'SplitPage',
-      name: 'SplitPage',
-      sceneConfig: Navigator.SceneConfigs.FloatFromBottom
-    });
   }
   gotoDiscussionPage() {
     this.props.navigator.push({
